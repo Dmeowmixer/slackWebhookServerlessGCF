@@ -44,8 +44,3 @@ exports.lincoln = functions.database.ref('lincoln').onWrite((change, context) =>
   };
   return request(options);
 });
-
-// webhook todo
- // Total number of records uploaded
- // Total value of newly uploaded donations
- // Percentage of Anonymous donations
