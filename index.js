@@ -11,7 +11,6 @@ exports.lincoln = functions.database.ref('lincoln').onWrite((change, context) =>
   let beforeDataLength = Object.keys(beforeData).length;
   let afterDataLength = Object.keys(afterData).length;
   let newDonations = afterDataLength - beforeDataLength;
-  console.log(beforeDataLength, afterDataLength);
   let anonDonorsCount = 0;
 
   let anonDonors = afterData.forEach(x => {
